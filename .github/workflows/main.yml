@@ -3,7 +3,8 @@ name: CI
 on:
   push:
     branches: [ master ]
-  buildx:
+jobs:
+  docker:
     runs-on: ubuntu-latest
     steps:
       - name: Docker Login
